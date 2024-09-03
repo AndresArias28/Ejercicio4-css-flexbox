@@ -1,0 +1,186 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    text-align: left;
+    padding: 50px;
+    background-image: url("../img/img2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #1a1919;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.card h2 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+.card p {
+    color: #333;
+    margin-bottom: 20px;
+}
+.button {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Estilos del título principal */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 7rem;
+}
+
+/* Estilos de la descripción */
+.description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 7rem;
+}
+
+/* Estilos del crédito de la imagen */
+.image-credit {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 40px;
+    margin-left: 8.5rem;
+}
+
+.image-credit a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.image-credit a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de los botones */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    margin-left: 8rem;
+}
+
+.btn-primary {
+    background-color: #1e90ff;
+}
+
+.btn-primary:hover {
+    background-color: #1c86ee;
+}
+
+.btn-secondary {
+    background-color: #87cefa;
+}
+
+.btn-secondary:hover {
+    background-color: #7ec0ee;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .card {
+        width: calc(50% - 40px);
+    }
+    .buttons{
+        flex-direction: column;
+        align-items: start                                                                                                                                                              ;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+    .title {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 1rem;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+
